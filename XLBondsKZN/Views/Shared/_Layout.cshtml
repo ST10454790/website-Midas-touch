@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - XLBonds KZN</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="~/images/logo.png" />
+
+</head>
+
+<body>
+
+    <!-- ==========================
+            NAVIGATION
+    =========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo-container">
+
+                <a href="#home">
+
+                    <img src="~/images/logo.png"
+                         alt="XLBonds Logo"
+                         class="logo" />
+
+                </a>
+
+                <div class="company-name">
+
+                    <h2>XLBONDS-KZN</h2>
+
+                    <p>Inventing the Right Home Loan</p>
+
+                </div>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#why-choose-us">Why Choose Us</a>
+                </li>
+
+                <li>
+                    <a href="#services">Our Services</a>
+                </li>
+
+                <li>
+                    <a href="#calculator">Calculator</a>
+                </li>
+
+                <li>
+                    <a href="#documents">Upload Documents</a>
+                </li>
+
+                <li>
+                    <a href="#advice">Tips & Advice</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================
+            PAGE CONTENT
+    =========================== -->
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+    <!-- ==========================
+              FOOTER
+    =========================== -->
+
+    <footer id="contact">
+
+        <div class="container">
+
+            <p>
+
+                © @DateTime.Now.Year XLBonds KZN
+
+                &nbsp; | &nbsp;
+
+                Excellence in Service
+
+                &nbsp; | &nbsp;
+
+                Customer Satisfaction
+
+                &nbsp; | &nbsp;
+
+                Professional Standards
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>
