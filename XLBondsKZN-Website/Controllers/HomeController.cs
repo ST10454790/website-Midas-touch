@@ -26,5 +26,18 @@ namespace XLBondsKZN_Website.Controllers
         {
             return View("~/Views/Advice&Tips/Tips and Advice.cshtml");
         }
+        public IActionResult ClientTestimonials()
+        {
+            return View("~/Views/testimonials/client testimonials.cshtml");
+        }
+
+        public IActionResult DocumentUploads()
+        {
+            return View("~/Views/Document upload/Documnet upload.cshtml");
+        }
+        public IActionResult AwardsRecognition()
+        {
+            return View("~/Views/Awards Recognition/Rewards&Recongnition.cshtml");
+        }
     }
 }
