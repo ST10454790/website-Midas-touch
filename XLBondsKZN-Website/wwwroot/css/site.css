@@ -320,28 +320,24 @@ body {
     background: #f7f9fa;
     border-top: 1px solid #cdd3d6;
 }
-.document-icon svg {
-    width: 60px;
-    height: 60px;
-    fill: none;
-    stroke: white;
-    stroke-width: 4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
+
 
 .document-title-icon {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
+    background-color: #dff3e6;
+    color: #2e8b57;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 8px;
-    background: #087448;
-    color: white;
-    border-radius: 50%;
-    font-size: 14px;
+    margin: 0 auto 20px;
 }
+
+    .document-title-icon svg {
+        width: 26px;
+        height: 26px;
+    }
 
 .documents-section .section-heading h1 {
     font-size: 24px;
@@ -376,10 +372,7 @@ body {
         font-weight: 600;
     }
 
-.document-icon {
-    color: #087448;
-    font-size: 12px;
-}
+
 
 .upload-box {
     position: relative;
