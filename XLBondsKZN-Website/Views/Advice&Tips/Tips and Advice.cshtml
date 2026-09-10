@@ -1,0 +1,167 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tips & Advice</title>
+
+    <link rel="stylesheet" href="~/css/site.css">
+
+    <!--google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="tips-section">
+        <div class="section-header">
+            <h1>Tips &amp; Advice</h1>
+            <p>Expert insights to help you navigate your home buying journey</p>
+        </div>
+        @* cards dont go into anything for now they are statics *@
+        <div class="cards-container">
+
+            <!--1st Card -->
+            <article class="tip-card">
+
+                <div class="card-icon">
+                    @* svg for the house icon  *@
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="15"
+                         height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         class="lucide lucide-house">
+
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                        <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+
+                    <span class="category">Buying Guide</span>
+
+                    <h2>First-Time Home Buyer Guide</h2>
+
+                    <p>
+                        Everything you need to know about purchasing your first
+                        property in South Africa.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- 2nd Card-->
+            <article class="tip-card">
+
+                <div class="card-icon">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                        <path d="M10 45L25 30L34 39L53 20" />
+                        <path d="M42 20H53V31" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+
+                    <span class="category">Financial Tips</span>
+
+                    <h2>Understanding Interest Rates</h2>
+
+                    <p>
+                        How interest rates affect your home loan and what to look
+                        for when comparing offers.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!--3rd card  -->
+            <article class="tip-card">
+
+                <div class="card-icon">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                        <path d="M32 9L50 16V29C50 41 42.5 51 32 56C21.5 51 14 41 14 29V16L32 9Z" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+
+                    <span class="category">Credit Advice</span>
+
+                    <h2>Improving Your Credit Score</h2>
+
+                    <p>
+                        Essential steps to improve your credit rating before
+                        applying for a home loan.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!--4th card-->
+            <article class="tip-card">
+
+                <div class="card-icon">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                        <path d="M10 13H27C32 13 36 17 36 22V53C36 48 32 45 27 45H10V13Z" />
+                        <path d="M54 13H37C32 13 28 17 28 22V53C28 48 32 45 37 45H54V13Z" />
+                    </svg>
+                </div>
+
+                <div class="card-content">
+
+                    <span class="category">Documentation</span>
+
+                    <h2>Bond Application Checklist</h2>
+
+                    <p>
+                        A comprihensive checklist of documents and requirements
+                        for your bond application.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

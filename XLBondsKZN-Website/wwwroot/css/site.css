@@ -1,0 +1,228 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+
+/*main part*/
+
+.tips-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 6%;
+}
+
+/*headers for the sections*/
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+    .section-header h1 {
+        font-size: 46px;
+        font-weight: 800;
+        line-height: 1.15;
+        color: #182033;
+        margin-bottom: 18px;
+    }
+    .section-header p {
+        font-size: 20px;
+        font-weight: 400;
+        color: #596273;
+        line-height: 1.5;
+    }
+
+/*card container*/
+.cards-container {
+    width: 100%;
+    max-width: 1265px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/*cards*/
+
+.tip-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06), 0 12px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .tip-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 20px 35px rgba(0, 0, 0, 0.08);
+    }
+
+
+/*icons display*/
+
+.card-icon {
+    height: 126px;
+    background: linear-gradient( 135deg, #087446, #07824d );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card-icon svg {
+        width: 60px;
+        height: 60px;
+        fill: none;
+        stroke: white;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+
+
+.card-content {
+    padding: 25px 23px 29px;
+    min-height: 265px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.category {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 5px 12px;
+    background: #e7f0ec;
+    color: #286b54;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+/*card details*/
+
+.card-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #172033;
+    margin-bottom: 14px;
+}
+/*descriptions*/
+
+.card-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #667080;
+    margin-bottom: 20px;
+}
+
+/*more info */
+
+.read-more {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: #087448;
+    font-size: 15px;
+    font-weight: 700;
+    transition: gap 0.2s ease;
+}
+    .read-more span {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .read-more:hover {
+        gap: 11px;
+    }
+/*different screen sizing */
+/*tablet*/
+@media (max-width: 1100px) {
+
+    .tips-section {
+        padding: 60px 5%;
+    }
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+    .section-header h1 {
+        font-size: 40px;
+    }}
+
+/*phone */
+@media (max-width: 650px) {
+
+    .tips-section {
+        padding: 45px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+        .section-header h1 {
+            font-size: 34px;
+        }
+        .section-header p {
+            font-size: 16px;
+        }
+
+
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .card-icon {
+        height: 115px;
+    }
+    .card-content {
+        min-height: auto;
+        padding: 23px 21px 27px;
+    }
+}
